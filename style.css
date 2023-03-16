@@ -1,0 +1,277 @@
+/* REMOVING THE DEFAULT STYLINGS FROM THE PAGE */
+html {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    min-height: 100%;
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?auto=format&h=200");
+    margin: 0;
+    padding: 0;
+}
+
+/* To do heading*/
+#heading h1 {
+    color: #2f3950;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+}
+
+/* filter button*/
+#filterholder button {
+    border: none;
+    width: 110px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 100px;
+    /* margin-bottom: 20px; */
+    margin-top: 25px;
+    border-radius: 5px;
+
+}
+
+/* filter button hover */
+#filterholder button:hover {
+    background: #2f3950;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+#filterholder button:active {
+    color: #ffffff;
+
+}
+
+/* content-box including filter button and task entry and tasks */
+#content-box {
+    background: #e1e9f2;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*addNew- box including filter button and task entry */
+#addNew {
+    box-sizing: border-box;
+    background: #81b4dd;
+    width: 95%;
+    display: inline-block;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    padding: 25px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 5px;
+}
+
+/*addNew- design for add and filter button*/
+#addNew button {
+    box-sizing: border-box;
+    border: none;
+    background: #2f3950;
+    height: 40px;
+    width: 140px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+}
+
+/* add task-place holder */
+
+#newTask {
+    width: 70%;
+    height: 35px;
+    margin-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #0855a1;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+
+/* new task- single task inside content box */
+.task-box {
+    box-sizing: border-box;
+    height: 60px;
+    width: 95%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 12px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #1763af;
+    background: #c9dee6;
+    text-align: left;
+    border-radius: 5px;
+}
+
+/* check box for single task*/
+.task-box label {
+    display: inline-block;
+    box-sizing: border-box;
+    background: #0b831dd5;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    /* float: left; */
+    cursor: pointer;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+/* delete button for single task*/
+#tasksholder button {
+    box-sizing: border-box;
+    background: #b3022bd5;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    font-size: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+/* check box for single task*/
+
+input[type=checkbox] {
+    margin: 0;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.textBox {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 2px;
+}
+.bubble {
+    position:absolute;
+}
+
+/* media to make it responsive*/
+
+@media (max-width: 1680px) {
+    #addNew {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .textBox {
+        margin-top: 8px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #content-box {
+        width: 86%;
+    }
+}
+
+@media (max-width: 1040px) {
+    #content-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 894px) {
+    .bubble input[type=text] {
+        width: 300px;
+    }
+
+    .textBox {
+        margin-top: 10px;
+        font-size: 16px;
+        margin-left: 50px;
+    }
+
+    #newTask {
+        width: 45%
+    }
+
+    #filterholder {
+        width: 86%;
+    }
+
+    .task-box {
+        height: 100px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+    }
+
+    #tasksholder button {
+        float: left;
+        margin-top: 45px;
+    }
+}
+
+@media (max-width: 760px) {
+    #addText {
+        float: none;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #addNew button {
+        float: none;
+        margin-top: 5px;
+    }
+
+    #newTask {
+        min-width: 290px;
+    }
+
+    .bubble input[type=text] {
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    #filterholder {
+        grid-template-columns: 40px 90px 90px 90px 100px;
+        font-size: 16px;
+    }
+
+    #filterholder button {
+        width: 90px;
+        font-size: 14px;
+    }
+
+    #filterholder button:hover {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 200px) {
+    #filterholder {
+        width: 97%;
+    }
+
+    .bubble input[type=text] {
+        width: 100px;
+    }
+}

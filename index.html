@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TODO list</title>
+    <meta name="description" content="TODO app with Vanilla.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="heading">
+        <!-- Title -->
+        <h1>TODO LIST</h1>
+    </div>
+    <!-- Input field to enter task  -->
+    <div id="content-box">
+        <div id="addNew">
+            <input type="text" id="newTask" placeholder="Things to do" maxlength="40">
+            <button onclick="app.addTask()">Add</button>
+            <!-- task status categories -->
+            <div id="filterholder">
+
+                <button onclick="app.filterTasks(false)">Complete</button>
+                <button onclick="app.filterTasks(true)"> Incomplete</button>
+                <button onclick="app.showAllTasks()">Show all</button>
+            </div>
+        </div>
+        <!-- task list -->
+        <div id="tasksholder"></div>
+    </div>
+    <!-- Adding java script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
